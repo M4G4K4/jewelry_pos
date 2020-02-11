@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="687.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLInserirProdutoController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="123.0" prefWidth="227.0" style="-fx-background-color: #006aff;">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="35.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/diamond.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="115.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Produto" wrappingWidth="216.999993160367">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="iniciais" focusColor="#0048ff" labelFloat="true" layoutX="52.0" layoutY="157.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Iniciais" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="quantidade" focusColor="#0048ff" labelFloat="true" layoutX="52.0" layoutY="213.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Quantidade" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="descricao" focusColor="#0048ff" labelFloat="true" layoutX="50.0" layoutY="270.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Descrição" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="peso" focusColor="#0048ff" labelFloat="true" layoutX="50.0" layoutY="327.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Peso" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="material" focusColor="#0048ff" labelFloat="true" layoutX="50.0" layoutY="386.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Material" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="toque" focusColor="#0048ff" labelFloat="true" layoutX="50.0" layoutY="450.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Toque" unFocusColor="#0048ffad" />
+      <JFXComboBox fx:id="compra" layoutX="434.0" layoutY="161.0" prefHeight="25.0" prefWidth="191.0" promptText="Compra" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="codFornecedor" focusColor="#0048ff" labelFloat="true" layoutX="434.0" layoutY="217.0" prefHeight="25.0" prefWidth="191.0" promptText="Codigo Artigo Fornecedor" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="preco" focusColor="#0048ff" labelFloat="true" layoutX="434.0" layoutY="270.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Preco" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="IVA" focusColor="#0048ff" labelFloat="true" layoutX="434.0" layoutY="327.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="IVA" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="desconto" focusColor="#0048ff" labelFloat="true" layoutX="434.0" layoutY="386.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Desconto" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="margen" focusColor="#0048ff" labelFloat="true" layoutX="434.0" layoutY="450.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Margem" unFocusColor="#0048ffad" />
+      <JFXButton fx:id="BotaoGuardar" layoutX="556.0" layoutY="523.0" onAction="#guardar" prefHeight="39.0" prefWidth="69.0" ripplerFill="#0017ff" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 2;" text="Guardar" textFill="#006aff" wrapText="true" />
+   </children>
+</AnchorPane>

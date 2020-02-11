@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" prefWidth="1181.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLListaFornecedoresController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="129.0" prefWidth="354.0" style="-fx-background-color: #006aff;">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="35.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/multiple-users-silhouette.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="115.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornecedores" wrappingWidth="200.00000393390656">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tabela" layoutX="49.0" layoutY="230.0" prefHeight="312.0" prefWidth="1047.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="36.0" text="ID" />
+            <TableColumn fx:id="nomeT" prefWidth="214.0" text="Nome" />
+            <TableColumn fx:id="moradaT" minWidth="0.0" prefWidth="253.0" text="Morada" />
+            <TableColumn fx:id="telemovelT" minWidth="0.0" prefWidth="106.0" text="Telemovel" />
+            <TableColumn fx:id="email" minWidth="0.0" prefWidth="156.0" text="Email" />
+            <TableColumn fx:id="obs" prefWidth="174.0" text="Observações" />
+            <TableColumn fx:id="cpostal" prefWidth="107.0" text="Cod. Postal" />
+         </columns>
+      </TableView>
+      <Text layoutX="49.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtros:" wrappingWidth="57.99997863173485">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="nome" layoutX="144.0" layoutY="179.0" promptText="Nome" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="morada" layoutX="310.0" layoutY="179.0" promptText="Morada" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="telemovel" layoutX="468.0" layoutY="179.0" promptText="Telemovel" unFocusColor="#0048ffad" />
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="666.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="42.0" layoutX="1110.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/plus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="42.0" layoutX="1110.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/remove.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="1110.0" layoutY="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/edit%20(1).png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="botaoAdicionar" layoutX="1105.0" layoutY="373.0" onAction="#adicionar" prefHeight="52.0" prefWidth="52.0" />
+      <JFXButton fx:id="botaoElimina" layoutX="1105.0" layoutY="440.0" onAction="#elimina" prefHeight="42.0" prefWidth="52.0" />
+      <JFXButton fx:id="botaoEdita" layoutX="1105.0" layoutY="495.0" onAction="#editar" prefHeight="52.0" prefWidth="52.0" />
+      <JFXButton fx:id="botaofiltro" layoutX="655.0" layoutY="171.0" onAction="#filtro" prefHeight="42.0" prefWidth="52.0" />
+      <JFXButton fx:id="botaoGuardar" layoutX="1088.0" layoutY="568.0" onAction="#guardar" prefHeight="39.0" prefWidth="69.0" ripplerFill="#0017ff" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 2;" text="Guardar" textFill="#006aff" wrapText="true" />
+   </children>
+</AnchorPane>

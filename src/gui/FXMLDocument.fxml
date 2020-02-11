@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="386.0" prefWidth="306.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLDocumentController">
+    <children>
+      <JFXTextField fx:id="usernameTextfield" focusColor="#006aff" labelFloat="true" layoutX="74.0" layoutY="160.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.9" prefHeight="30.0" prefWidth="159.0" promptText="Utilizador" unFocusColor="#006affb2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#006aff" labelFloat="true" layoutX="74.0" layoutY="221.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.9" prefHeight="30.0" prefWidth="159.0" promptText="Palavra-Passe" unFocusColor="#006affb2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="LoginBotao" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="164.0" layoutY="294.0" onAction="#Login" prefHeight="39.0" prefWidth="69.0" ripplerFill="DODGERBLUE" scaleShape="false" style="-fx-background-color: #1e90ff; -fx-border-color: #1e90ff; -fx-border-width: 1.5; -fx-border-radius: 2;" text="Entrar" textFill="WHITE" wrapText="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text fill="DODGERBLUE" layoutX="45.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="39.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/yumminky-pc-43-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="39.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/password.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

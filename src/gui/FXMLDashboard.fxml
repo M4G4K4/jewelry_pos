@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLDashboardController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="722.0" prefWidth="1044.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="114.0" fitWidth="137.0" layoutX="735.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/shopping-bag.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="123.0" fitWidth="136.0" layoutX="438.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/customer-service%202.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="123.0" fitWidth="140.0" layoutX="130.0" layoutY="480.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/customer-service.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="131.0" fitWidth="123.0" layoutX="728.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cart.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="434.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/network.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="123.0" fitWidth="126.0" layoutX="133.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ring.png" />
+               </image>
+
+            </ImageView>
+            <AnchorPane layoutX="-4.0" prefHeight="123.0" prefWidth="372.0" style="-fx-background-color: #006aff;">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="68.0" layoutX="45.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/home.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="118.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Painel Controlo" wrappingWidth="239.00000393390656">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Text fill="#6f6f6f" layoutX="467.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes" wrappingWidth="84.0000042617321">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#6f6f6f" layoutX="755.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Venda" wrappingWidth="69.0000042617321">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#6f6f6f" layoutX="116.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornecedores" wrappingWidth="149.99997913837433">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#6f6f6f" layoutX="436.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionario" wrappingWidth="126.0000042617321">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#6f6f6f" layoutX="746.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compra" wrappingWidth="90.99998474121094">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#6f6f6f" layoutX="145.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtos" wrappingWidth="97.0000042617321">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="ProdutosBotao" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="115.0" layoutY="223.0" onAction="#OpenProdutos" prefHeight="145.0" prefWidth="158.0" ripplerFill="#0017ff" scaleShape="false" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 30;" textAlignment="CENTER" textFill="#006aff" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="ClientesBotao" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="430.0" layoutY="216.0" onAction="#OpenClientes" prefHeight="145.0" prefWidth="158.0" ripplerFill="#0017ff" scaleShape="false" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 30;" textFill="#006aff" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="VendaBotao" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="711.0" layoutY="219.0" onAction="#OpenVenda" prefHeight="145.0" prefWidth="158.0" ripplerFill="#0017ff" scaleShape="false" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 30;" textFill="#006aff" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="FornecedoresBotao" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="112.0" layoutY="469.0" onAction="#OpenFornecedores" prefHeight="145.0" prefWidth="158.0" ripplerFill="#0017ff" scaleShape="false" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 30;" textFill="#006aff" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="FuncionarioBotao" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="420.0" layoutY="469.0" onAction="#OpenFuncionario" prefHeight="145.0" prefWidth="158.0" ripplerFill="#0017ff" scaleShape="false" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 30;" textFill="#006aff" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="CompraBotao" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="711.0" layoutY="462.0" onAction="#OpenCompra" prefHeight="145.0" prefWidth="158.0" ripplerFill="#0017ff" scaleShape="false" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 30;" textFill="#006aff" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

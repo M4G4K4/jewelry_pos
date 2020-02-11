@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="919.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLInserirClientesController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="129.0" prefWidth="301.0" style="-fx-background-color: #006aff;">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="35.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/client.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="115.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserir Cliente" wrappingWidth="191.00000081956387">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="nome" focusColor="#0048ff" labelFloat="true" layoutX="125.0" layoutY="186.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Nome" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="telemovel" focusColor="#0048ff" labelFloat="true" layoutX="125.0" layoutY="253.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Telemovel" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="email" focusColor="#0048ff" labelFloat="true" layoutX="123.0" layoutY="313.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Email" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="ncc" focusColor="#0048ff" labelFloat="true" layoutX="123.0" layoutY="380.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="Numero CC" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="NIF" focusColor="#0048ff" labelFloat="true" layoutX="123.0" layoutY="437.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="191.0" promptText="NIF" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="nContribuinte" focusColor="#0048ff" layoutX="123.0" layoutY="501.0" prefHeight="25.0" prefWidth="191.0" promptText="Numero Contribuinte" unFocusColor="#0048ff99" />
+      <JFXTextField fx:id="morada" focusColor="#0048ff" labelFloat="true" layoutX="496.0" layoutY="179.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="39.0" prefWidth="308.0" promptText="Morada" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="localidade" focusColor="#0048ff" labelFloat="true" layoutX="496.0" layoutY="249.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="135.0" promptText="Localidade" unFocusColor="#0048ffad" />
+      <JFXTextField fx:id="codigoPostal" focusColor="#0048ff" labelFloat="true" layoutX="668.0" layoutY="249.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="135.0" promptText="Codigo Postal" unFocusColor="#0048ffad" />
+      <JFXTextArea fx:id="obs" layoutX="502.0" layoutY="327.0" prefHeight="143.0" prefWidth="331.0" promptText="Observações" unFocusColor="#0048ff" />
+      <JFXButton fx:id="BotaoGuardar" layoutX="768.0" layoutY="501.0" onAction="#guardar" prefHeight="39.0" prefWidth="69.0" ripplerFill="#0017ff" style="-fx-background-color: transparent; -fx-border-color: #006aff; -fx-border-width: 1.5; -fx-border-radius: 2;" text="Guardar" textFill="#006aff" wrapText="true" />
+   </children>
+</AnchorPane>
