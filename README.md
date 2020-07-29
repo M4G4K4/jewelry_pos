@@ -1,3 +1,3 @@
 # jewelry_pos
 
-JAVAFX jewelry POS system
+JavaFX jewelry POS(Point of Sale) system
