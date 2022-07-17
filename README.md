@@ -1,3 +1,5 @@
-# jewelry_pos
+# jewelry POS
 
-JavaFX jewelry POS(Point of Sale) system
+JavaFX jewelry POS (Point of Sale) system.
+
+Made in Universaty.
